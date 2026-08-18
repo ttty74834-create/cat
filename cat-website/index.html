@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="欢迎来到喵星人的梦幻世界 - 最精美的猫咪主题网站，探索猫咪品种、护理指南、精美画廊和趣味知识">
+    <meta name="keywords" content="猫咪，小猫，宠物，猫奴，猫咪品种，猫咪护理，猫咪图片">
+    <title>🐱 喵星人的梦幻世界 | Cute Cats Paradise</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="cat-loader">
+            <div class="yarn-ball"></div>
+            <div class="cat-paw"></div>
+        </div>
+        <p class="loading-text">正在编织喵星世界...</p>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-paw paw-logo"></i>
+                <span>喵星人世界</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i>首页</a></li>
+                <li><a href="#featured" class="nav-link"><i class="fas fa-cat"></i>特色猫咪</a></li>
+                <li><a href="#breeds" class="nav-link"><i class="fas fa-th-large"></i>品种百科</a></li>
+                <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i>精美画廊</a></li>
+                <li><a href="#care" class="nav-link"><i class="fas fa-heart"></i>护理指南</a></li>
+                <li><a href="#facts" class="nav-link"><i class="fas fa-lightbulb"></i>趣味事实</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>联系我们</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1920&q=80')">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1573865526739-10659fec7479?w=1920&q=80')">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1495360019602-e0019216adfe?w=1920&q=80')">
+                <div class="overlay"></div>
+            </div>
+        </div>
+        
+        <div class="floating-elements">
+            <i class="fas fa-paw floating-paw" style="--delay: 0s;"></i>
+            <i class="fas fa-fish floating-fish" style="--delay: 1s;"></i>
+            <div class="floating-yarn" style="--delay: 2s;"></div>
+            <i class="fas fa-star floating-star" style="--delay: 3s;"></i>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title typing-effect">欢迎来到喵星人的梦幻世界</h1>
+            <p class="hero-subtitle bubble-text">在这里，每一只猫咪都是主角，每一个瞬间都值得珍藏</p>
+            <div class="hero-buttons">
+                <a href="#featured" class="btn btn-primary btn-3d">
+                    <i class="fas fa-compass"></i>
+                    <span>探索更多</span>
+                </a>
+                <a href="#gallery" class="btn btn-secondary btn-glow">
+                    <i class="fas fa-play"></i>
+                    <span>观看视频</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>向下滚动</p>
+        </div>
+    </section>
+
+    <!-- Featured Cats Section -->
+    <section class="featured section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-crown"></i>
+                    <span>特色猫咪明星</span>
+                </h2>
+                <p class="section-subtitle">本月最受欢迎的喵星人</p>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="track">
+                        <li class="carousel-slide current-slide">
+                            <div class="cat-card card-3d">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1529778873920-4da4926a7071?w=600&q=80" alt="小奶猫">
+                                    <div class="image-overlay">
+                                        <button class="like-btn" data-likes="1234">
+                                            <i class="far fa-heart"></i>
+                                            <span class="like-count">1234</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="cat-name">小奶油</h3>
+                                    <div class="cat-tags">
+                                        <span class="tag tag-pink">可爱</span>
+                                        <span class="tag tag-purple">粘人</span>
+                                        <span class="tag tag-blue">活泼</span>
+                                    </div>
+                                    <p class="cat-desc">三个月大的英短银渐层，拥有宝石般的大眼睛和柔软的毛发。</p>
+                                    <button class="btn-details">
+                                        <span>了解更多</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="cat-card card-3d">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1513245543132-31f507417b25?w=600&q=80" alt="布偶猫">
+                                    <div class="image-overlay">
+                                        <button class="like-btn" data-likes="987">
+                                            <i class="far fa-heart"></i>
+                                            <span class="like-count">987</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="cat-name">雪球</h3>
+                                    <div class="cat-tags">
+                                        <span class="tag tag-pink">温柔</span>
+                                        <span class="tag tag-purple">优雅</span>
+                                        <span class="tag tag-blue">安静</span>
+                                    </div>
+                                    <p class="cat-desc">两岁的布偶猫公主，性格温顺如天使，喜欢被抱抱。</p>
+                                    <button class="btn-details">
+                                        <span>了解更多</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="cat-card card-3d">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600&q=80" alt="橘猫">
+                                    <div class="image-overlay">
+                                        <button class="like-btn" data-likes="1567">
+                                            <i class="far fa-heart"></i>
+                                            <span class="like-count">1567</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="cat-name">橘子酱</h3>
+                                    <div class="cat-tags">
+                                        <span class="tag tag-pink">吃货</span>
+                                        <span class="tag tag-purple">搞笑</span>
+                                        <span class="tag tag-blue">友善</span>
+                                    </div>
+                                    <p class="cat-desc">四岁的橘猫大胃王，每天最大的乐趣就是吃饭和睡觉。</p>
+                                    <button class="btn-details">
+                                        <span>了解更多</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="cat-card card-3d">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80" alt="黑猫">
+                                    <div class="image-overlay">
+                                        <button class="like-btn" data-likes="876">
+                                            <i class="far fa-heart"></i>
+                                            <span class="like-count">876</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="cat-name">小黑夜</h3>
+                                    <div class="cat-tags">
+                                        <span class="tag tag-pink">神秘</span>
+                                        <span class="tag tag-purple">独立</span>
+                                        <span class="tag tag-blue">聪明</span>
+                                    </div>
+                                    <p class="cat-desc">一岁的孟买猫，拥有夜空中最亮的眼睛，是捕鼠高手。</p>
+                                    <button class="btn-details">
+                                        <span>了解更多</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="carousel-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- Cat Breeds Encyclopedia -->
+    <section class="breeds section" id="breeds">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-book-open"></i>
+                    <span>猫咪品种百科</span>
+                </h2>
+                <p class="section-subtitle">探索来自世界各地的猫咪品种</p>
+            </div>
+            
+            <div class="filter-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="搜索品种..." id="breedSearch">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="longhair">长毛</button>
+                    <button class="filter-btn" data-filter="shorthair">短毛</button>
+                    <button class="filter-btn" data-filter="large">大型</button>
+                    <button class="filter-btn" data-filter="small">小型</button>
+                </div>
+            </div>
+            
+            <div class="breeds-grid" id="breedsGrid">
+                <!-- Breed cards will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-camera-retro"></i>
+                    <span>精美猫咪画廊</span>
+                </h2>
+                <p class="section-subtitle">捕捉喵星人的每一个美好瞬间</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-category="all">全部</button>
+                <button class="gallery-filter" data-category="kitten">幼猫</button>
+                <button class="gallery-filter" data-category="funny">搞怪</button>
+                <button class="gallery-filter" data-category="sleeping">睡姿</button>
+                <button class="gallery-filter" data-category="playing">玩耍</button>
+                <button class="gallery-filter" data-category="portrait">写真</button>
+            </div>
+            
+            <div class="gallery-masonry" id="galleryMasonry">
+                <!-- Gallery images will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Guide -->
+    <section class="care section" id="care">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>猫咪护理指南</span>
+                </h2>
+                <p class="section-subtitle">成为专业铲屎官的必修课</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <h3><i class="fas fa-baby"></i> 幼猫期 (0-6个月)</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 疫苗接种计划</li>
+                                <li><i class="fas fa-check-circle"></i> 社会化训练</li>
+                                <li><i class="fas fa-check-circle"></i> 营养喂养指南</li>
+                                <li><i class="fas fa-check-circle"></i> 如厕训练技巧</li>
+                            </ul>
+                            <a href="#" class="learn-more">查看详细指南 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <h3><i class="fas fa-running"></i> 青年期 (6个月-2岁)</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 绝育手术时机</li>
+                                <li><i class="fas fa-check-circle"></i> 行为问题纠正</li>
+                                <li><i class="fas fa-check-circle"></i> 运动与游戏需求</li>
+                                <li><i class="fas fa-check-circle"></i> 牙齿护理开始</li>
+                            </ul>
+                            <a href="#" class="learn-more">查看详细指南 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <h3><i class="fas fa-user"></i> 成年期 (2-7岁)</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 年度体检重要性</li>
+                                <li><i class="fas fa-check-circle"></i> 体重管理方案</li>
+                                <li><i class="fas fa-check-circle"></i> 毛发护理技巧</li>
+                                <li><i class="fas fa-check-circle"></i> 心理健康关注</li>
+                            </ul>
+                            <a href="#" class="learn-more">查看详细指南 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <h3><i class="fas fa-wheelchair"></i> 老年期 (7岁以上)</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 老年病预防</li>
+                                <li><i class="fas fa-check-circle"></i> 特殊饮食需求</li>
+                                <li><i class="fas fa-check-circle"></i> 关节保健方法</li>
+                                <li><i class="fas fa-check-circle"></i> 舒适环境营造</li>
+                            </ul>
+                            <a href="#" class="learn-more">查看详细指南 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="care-modules">
+                <div class="care-module">
+                    <div class="module-icon food-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>饮食营养</h3>
+                    <p>科学的饮食搭配，让猫咪健康成长</p>
+                    <div class="nutrition-pie">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#ffe4e1" stroke-width="20"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#ff7f7f" stroke-width="20" 
+                                    stroke-dasharray="75 251" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#98fb98" stroke-width="20" 
+                                    stroke-dasharray="50 251" stroke-dashoffset="-75" transform="rotate(-90 50 50)"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#87ceeb" stroke-width="20" 
+                                    stroke-dasharray="126 251" stroke-dashoffset="-125" transform="rotate(-90 50 50)"/>
+                        </svg>
+                        <div class="pie-labels">
+                            <span>蛋白质 30%</span>
+                            <span>脂肪 20%</span>
+                            <span>碳水 50%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="care-module">
+                    <div class="module-icon health-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>健康医疗</h3>
+                    <p>定期体检，预防胜于治疗</p>
+                    <div class="vaccine-schedule">
+                        <div class="vaccine-item">
+                            <i class="fas fa-syringe"></i>
+                            <div class="vaccine-info">
+                                <strong>核心疫苗</strong>
+                                <span>6-8周开始</span>
+                            </div>
+                        </div>
+                        <div class="vaccine-item">
+                            <i class="fas fa-pills"></i>
+                            <div class="vaccine-info">
+                                <strong>驱虫计划</strong>
+                                <span>每月一次</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="care-module">
+                    <div class="module-icon grooming-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>日常护理</h3>
+                    <p>保持清洁，猫咪更舒适</p>
+                    <div class="grooming-tips">
+                        <div class="tip-item">
+                            <i class="fas fa-cut"></i>
+                            <span>定期剪指甲</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-brush"></i>
+                            <span>每周梳毛 2-3 次</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-tooth"></i>
+                            <span>刷牙防牙结石</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Facts -->
+    <section class="facts section" id="facts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>趣味猫咪事实</span>
+                </h2>
+                <p class="section-subtitle">你不知道的喵星人冷知识</p>
+            </div>
+            
+            <div class="facts-container">
+                <div class="fact-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-question-circle fact-icon"></i>
+                            <h3>点击揭开真相</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <i class="fas fa-history fact-icon"></i>
+                            <h3>历史传说</h3>
+                            <p>古埃及人认为猫咪是神圣的动物，伤害猫咪会被判处死刑。当家里的猫咪去世时，全家人会剃掉眉毛以示哀悼。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-question-circle fact-icon"></i>
+                            <h3>点击揭开真相</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <i class="fas fa-eye fact-icon"></i>
+                            <h3>身体奥秘</h3>
+                            <p>猫咪的鼻子纹路就像人类的指纹一样，每只猫都是独一无二的。而且它们可以听到比狗更高频率的声音！</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-question-circle fact-icon"></i>
+                            <h3>点击揭开真相</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <i class="fas fa-bed fact-icon"></i>
+                            <h3>行为解读</h3>
+                            <p>猫咪一天要睡 12-16 个小时，这有助于它们保存能量用于狩猎。当你看到猫咪对你缓慢眨眼时，那是它们在说"我爱你"。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-question-circle fact-icon"></i>
+                            <h3>点击揭开真相</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <i class="fas fa-trophy fact-icon"></i>
+                            <h3>世界纪录</h3>
+                            <p>世界上最长寿的猫活到了 38 岁！而跳得最高的猫可以跳到自身身高 6 倍的高度，相当于人类跳过一栋三层楼的建筑。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-counter">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="60">0</div>
+                    <div class="stat-label">
+                        <i class="fas fa-volume-up"></i>
+                        <span>种不同叫声</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">
+                        <i class="fas fa-running"></i>
+                        <span>最高时速 km/h</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="9000">0</div>
+                    <div class="stat-label">
+                        <i class="fas fa-headphones"></i>
+                        <span>赫兹听力范围</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">
+                        <i class="fas fa-clock"></i>
+                        <span>百万年驯化史</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Zone -->
+    <section class="interactive section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-gamepad"></i>
+                    <span>互动娱乐区</span>
+                </h2>
+                <p class="section-subtitle">和喵星人一起玩耍吧</p>
+            </div>
+            
+            <div class="interactive-games">
+                <div class="game-card">
+                    <i class="fas fa-music game-icon"></i>
+                    <h3>猫叫模拟器</h3>
+                    <p>听听猫咪在不同情境下的叫声</p>
+                    <div class="sound-buttons">
+                        <button class="sound-btn" data-sound="meow">
+                            <i class="fas fa-volume-up"></i>
+                            <span>撒娇</span>
+                        </button>
+                        <button class="sound-btn" data-sound="purr">
+                            <i class="fas fa-volume-up"></i>
+                            <span>呼噜</span>
+                        </button>
+                        <button class="sound-btn" data-sound="hiss">
+                            <i class="fas fa-volume-up"></i>
+                            <span>警告</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <i class="fas fa-magic game-icon"></i>
+                    <h3>猫咪起名器</h3>
+                    <p>输入特征，生成专属猫名</p>
+                    <div class="name-generator">
+                        <input type="text" placeholder="输入特征，如：白色、活泼..." id="nameInput">
+                        <button id="generateName">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            <span>生成名字</span>
+                        </button>
+                        <div class="generated-name" id="generatedName"></div>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <i class="fas fa-calculator game-icon"></i>
+                    <h3>年龄转换器</h3>
+                    <p>计算猫咪相当于人类多少岁</p>
+                    <div class="age-converter">
+                        <input type="number" placeholder="猫咪年龄 (岁)" id="catAge" min="0" max="30">
+                        <button id="convertAge">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>转换</span>
+                        </button>
+                        <div class="human-age" id="humanAge"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>联系我们</span>
+                </h2>
+                <p class="section-subtitle">有任何问题或建议？欢迎告诉我们</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>地址</h4>
+                            <p>喵星人星球银河系第三旋臂</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>电话</h4>
+                            <p>+86 123 4567 8901</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>hello@catparadise.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="你的名字" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="电子邮箱" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="主题">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="你想对我们说什么..." rows="5" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>发送消息</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <span>消息已发送！我们会尽快回复你~</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>
+                        <i class="fas fa-paw"></i>
+                        喵星人世界
+                    </h3>
+                    <p>致力于传播科学养猫理念，分享猫咪带来的快乐与温暖。</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#breeds">品种百科</a></li>
+                        <li><a href="#gallery">精美画廊</a></li>
+                        <li><a href="#care">护理指南</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>资源下载</h4>
+                    <ul>
+                        <li><a href="#">护理清单</a></li>
+                        <li><a href="#">食谱卡片</a></li>
+                        <li><a href="#">疫苗时间表</a></li>
+                        <li><a href="#">行为指南</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>关注我们</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="订阅我们的通讯">
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> 喵星人世界。All rights reserved. Made with <i class="fas fa-heart"></i> for cat lovers.</p>
+                <div class="footer-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                    <a href="#">网站地图</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- Lightbox for Gallery -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Modal for Breed Details -->
+    <div class="modal" id="breedModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
