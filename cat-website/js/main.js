@@ -291,18 +291,18 @@ const Carousel = {
 // ========================================
 const BreedsGrid = {
     breedsData: [
-        { name: '英国短毛猫', english: 'British Shorthair', origin: '英国', lifespan: '12-17 年', weight: '4-8 kg', friendliness: 5, image: 'https://images.unsplash.com/photo-1573865526739-10659fec7479?w=400&q=80', category: 'shorthair' },
-        { name: '布偶猫', english: 'Ragdoll', origin: '美国', lifespan: '12-15 年', weight: '5-10 kg', friendliness: 5, image: 'https://images.unsplash.com/photo-1513245543132-31f507417b25?w=400&q=80', category: 'longhair' },
-        { name: '缅因猫', english: 'Maine Coon', origin: '美国', lifespan: '12-15 年', weight: '6-11 kg', friendliness: 4, image: 'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=400&q=80', category: 'longhair large' },
-        { name: '暹罗猫', english: 'Siamese', origin: '泰国', lifespan: '15-20 年', weight: '3-5 kg', friendliness: 5, image: 'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=400&q=80', category: 'shorthair small' },
-        { name: '波斯猫', english: 'Persian', origin: '伊朗', lifespan: '12-17 年', weight: '3-7 kg', friendliness: 4, image: 'https://images.unsplash.com/photo-1561948955-570b270e7c36?w=400&q=80', category: 'longhair' },
-        { name: '美国短毛猫', english: 'American Shorthair', origin: '美国', lifespan: '15-20 年', weight: '4-7 kg', friendliness: 5, image: 'https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=400&q=80', category: 'shorthair' },
-        { name: '苏格兰折耳猫', english: 'Scottish Fold', origin: '苏格兰', lifespan: '11-14 年', weight: '3-6 kg', friendliness: 4, image: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&q=80', category: 'shorthair small' },
-        { name: '斯芬克斯猫', english: 'Sphynx', origin: '加拿大', lifespan: '12-14 年', weight: '3-5 kg', friendliness: 5, image: 'https://images.unsplash.com/photo-1520315342986-46963268a4d1?w=400&q=80', category: 'small' },
-        { name: '孟加拉猫', english: 'Bengal', origin: '美国', lifespan: '12-16 年', weight: '4-7 kg', friendliness: 4, image: 'https://images.unsplash.com/photo-1615266895738-11f1371cd7e5?w=400&q=80', category: 'shorthair' },
-        { name: '俄罗斯蓝猫', english: 'Russian Blue', origin: '俄罗斯', lifespan: '15-20 年', weight: '3-6 kg', friendliness: 3, image: 'https://images.unsplash.com/photo-1511044564299-321e9bb3c667?w=400&q=80', category: 'shorthair small' },
-        { name: '挪威森林猫', english: 'Norwegian Forest', origin: '挪威', lifespan: '14-16 年', weight: '5-9 kg', friendliness: 4, image: 'https://images.unsplash.com/photo-1615266895738-11f1371cd7e5?w=400&q=80', category: 'longhair large' },
-        { name: '阿比西尼亚猫', english: 'Abyssinian', origin: '埃塞俄比亚', lifespan: '12-15 年', weight: '3-5 kg', friendliness: 5, image: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=400&q=80', category: 'shorthair small' }
+        { name: '英国短毛猫', english: 'British Shorthair', origin: '英国', lifespan: '12-17 年', weight: '4-8 kg', friendliness: 5, image: 'images/breed1.jpg', category: 'shorthair' },
+        { name: '布偶猫', english: 'Ragdoll', origin: '美国', lifespan: '12-15 年', weight: '5-10 kg', friendliness: 5, image: 'images/breed2.jpg', category: 'longhair' },
+        { name: '缅因猫', english: 'Maine Coon', origin: '美国', lifespan: '12-15 年', weight: '6-11 kg', friendliness: 4, image: 'images/breed3.jpg', category: 'longhair large' },
+        { name: '暹罗猫', english: 'Siamese', origin: '泰国', lifespan: '15-20 年', weight: '3-5 kg', friendliness: 5, image: 'images/breed4.jpg', category: 'shorthair small' },
+        { name: '波斯猫', english: 'Persian', origin: '伊朗', lifespan: '12-17 年', weight: '3-7 kg', friendliness: 4, image: 'images/breed5.jpg', category: 'longhair' },
+        { name: '美国短毛猫', english: 'American Shorthair', origin: '美国', lifespan: '15-20 年', weight: '4-7 kg', friendliness: 5, image: 'images/breed6.jpg', category: 'shorthair' },
+        { name: '苏格兰折耳猫', english: 'Scottish Fold', origin: '苏格兰', lifespan: '11-14 年', weight: '3-6 kg', friendliness: 4, image: 'images/breed7.jpg', category: 'shorthair small' },
+        { name: '斯芬克斯猫', english: 'Sphynx', origin: '加拿大', lifespan: '12-14 年', weight: '3-5 kg', friendliness: 5, image: 'images/breed8.jpg', category: 'small' },
+        { name: '孟加拉猫', english: 'Bengal', origin: '美国', lifespan: '12-16 年', weight: '4-7 kg', friendliness: 4, image: 'images/breed1.jpg', category: 'shorthair' },
+        { name: '俄罗斯蓝猫', english: 'Russian Blue', origin: '俄罗斯', lifespan: '15-20 年', weight: '3-6 kg', friendliness: 3, image: 'images/breed2.jpg', category: 'shorthair small' },
+        { name: '挪威森林猫', english: 'Norwegian Forest', origin: '挪威', lifespan: '14-16 年', weight: '5-9 kg', friendliness: 4, image: 'images/breed3.jpg', category: 'longhair large' },
+        { name: '阿比西尼亚猫', english: 'Abyssinian', origin: '埃塞俄比亚', lifespan: '12-15 年', weight: '3-5 kg', friendliness: 5, image: 'images/breed4.jpg', category: 'shorthair small' }
     ],
     
     grid: null,
@@ -396,18 +396,18 @@ const BreedsGrid = {
 // ========================================
 const Gallery = {
     images: [
-        { src: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80', caption: '好奇的小猫咪', category: 'kitten' },
-        { src: 'https://images.unsplash.com/photo-1573865526739-10659fec7479?w=600&q=80', caption: '慵懒午后', category: 'sleeping' },
-        { src: 'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600&q=80', caption: '调皮时刻', category: 'funny' },
-        { src: 'https://images.unsplash.com/photo-1513245543132-31f507417b25?w=600&q=80', caption: '优雅公主', category: 'portrait' },
-        { src: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80', caption: '黑夜精灵', category: 'portrait' },
-        { src: 'https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=600&q=80', caption: '玩耍时间', category: 'playing' },
-        { src: 'https://images.unsplash.com/photo-1561948955-570b270e7c36?w=600&q=80', caption: '萌萌哒', category: 'kitten' },
-        { src: 'https://images.unsplash.com/photo-1592194996308-7b433426a4d1?w=600&q=80', caption: '搞笑表情', category: 'funny' },
-        { src: 'https://images.unsplash.com/photo-1511044564299-321e9bb3c667?w=600&q=80', caption: '深度睡眠', category: 'sleeping' },
-        { src: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&q=80', caption: '探索者', category: 'playing' },
-        { src: 'https://images.unsplash.com/photo-1529778873920-4da4926a7071?w=600&q=80', caption: '小奶猫', category: 'kitten' },
-        { src: 'https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?w=600&q=80', caption: '高贵气质', category: 'portrait' }
+        { src: 'images/gallery1.jpg', caption: '好奇的小猫咪', category: 'kitten' },
+        { src: 'images/gallery2.jpg', caption: '慵懒午后', category: 'sleeping' },
+        { src: 'images/gallery3.jpg', caption: '调皮时刻', category: 'funny' },
+        { src: 'images/gallery4.jpg', caption: '优雅公主', category: 'portrait' },
+        { src: 'images/gallery5.jpg', caption: '黑夜精灵', category: 'portrait' },
+        { src: 'images/gallery6.jpg', caption: '玩耍时间', category: 'playing' },
+        { src: 'images/gallery7.jpg', caption: '萌萌哒', category: 'kitten' },
+        { src: 'images/gallery8.jpg', caption: '搞笑表情', category: 'funny' },
+        { src: 'images/cat1.jpg', caption: '深度睡眠', category: 'sleeping' },
+        { src: 'images/cat2.jpg', caption: '探索者', category: 'playing' },
+        { src: 'images/cat3.jpg', caption: '小奶猫', category: 'kitten' },
+        { src: 'images/breed1.jpg', caption: '高贵气质', category: 'portrait' }
     ],
     
     masonry: null,
