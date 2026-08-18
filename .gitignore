@@ -1,3 +1,4 @@
-Nothing should be ignored in this case, as the changes only include image files (.jpg) which are not meant to be ignored according to rule #8. The file list contains only source/media files without any build artifacts, dependencies, or temporary files that would require ignoring.
-
-Therefore, the output is empty.
+```
+# Images are part of the website content and should not be ignored
+# No additional ignores needed for this change set
+```
